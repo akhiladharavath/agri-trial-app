@@ -1,0 +1,280 @@
+/* Trial Details Page */
+
+.trial-details-page {
+max-width: 1200px;
+margin: 0 auto;
+padding: 30px 24px;
+color: #1f2937;
+}
+
+.trial-details-page .back-link {
+display: inline-block;
+margin-bottom: 24px;
+color: #15803d;
+font-weight: 600;
+text-decoration: none;
+}
+
+.trial-details-page .back-link:hover {
+text-decoration: underline;
+}
+
+.trial-details-page .page-header {
+margin-bottom: 28px;
+}
+
+.trial-details-page .page-header h1 {
+margin-bottom: 8px;
+font-size: 30px;
+font-weight: 700;
+}
+
+.trial-details-page .page-header p {
+color: #6b7280;
+line-height: 1.6;
+}
+
+/* Information Cards */
+
+.trial-details-page .details-card {
+margin-bottom: 24px;
+padding: 26px;
+background: #ffffff;
+border: 1px solid #e5e7eb;
+border-radius: 14px;
+box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.trial-details-page .details-card h2 {
+margin: 0 0 22px;
+color: #166534;
+font-size: 21px;
+}
+
+/* Trial Information Grid */
+
+.trial-details-page .details-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+gap: 22px;
+}
+
+.trial-details-page .details-grid div {
+display: flex;
+flex-direction: column;
+gap: 8px;
+padding: 15px;
+background: #f8fafc;
+border-radius: 9px;
+}
+
+.trial-details-page .details-grid span {
+color: #6b7280;
+font-size: 13px;
+}
+
+.trial-details-page .details-grid strong {
+color: #111827;
+font-size: 16px;
+overflow-wrap: anywhere;
+}
+
+/* Yield Evidence Table */
+
+.trial-details-page .table-container {
+width: 100%;
+overflow-x: auto;
+}
+
+.trial-details-page .table-container table {
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.trial-details-page .table-container th {
+padding: 15px 14px;
+background: #f0fdf4;
+color: #166534;
+font-size: 13px;
+white-space: nowrap;
+}
+
+.trial-details-page .table-container td {
+padding: 15px 14px;
+border-bottom: 1px solid #e5e7eb;
+font-size: 14px;
+white-space: nowrap;
+}
+
+.trial-details-page .table-container tbody tr:hover {
+background: #f9fafb;
+}
+
+/* Loading and Error Messages */
+
+.trial-details-page .loading-message {
+padding: 30px;
+color: #4b5563;
+text-align: center;
+}
+
+.trial-details-page .error-message {
+margin: 20px 0;
+padding: 16px;
+color: #b91c1c;
+background: #fef2f2;
+border: 1px solid #fecaca;
+border-radius: 8px;
+}
+
+/* Notes */
+
+.trial-details-page .trial-notes {
+color: #4b5563;
+line-height: 1.7;
+overflow-wrap: anywhere;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+.trial-details-page {
+padding: 20px 14px;
+}
+
+.trial-details-page .page-header h1 {
+    font-size: 24px;
+}
+
+.trial-details-page .details-card {
+    padding: 18px;
+}
+
+.trial-details-page .details-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+
+}
+
+.source-evidence-card {
+    margin-top: 24px;
+}
+
+.source-intro {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.source-list {
+    display: grid;
+    gap: 16px;
+}
+
+.source-item {
+    padding: 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.source-item-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.source-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    color: #166534;
+    background: #f0fdf4;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.source-item-heading h3 {
+    margin: 0;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+.source-type {
+    margin: 6px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.source-metadata {
+    display: grid;
+    grid-template-columns: minmax(110px, 150px) minmax(0, 1fr);
+    gap: 10px 16px;
+    margin: 18px 0;
+    font-size: 14px;
+}
+
+.source-metadata dt {
+    color: #64748b;
+}
+
+.source-metadata dd {
+    margin: 0;
+    color: #1e293b;
+    overflow-wrap: anywhere;
+}
+
+.source-link {
+    display: inline-block;
+    margin-top: 4px;
+    color: #15803d;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.source-link:hover {
+    text-decoration: underline;
+}
+
+.source-unavailable,
+.source-empty {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.source-unavailable {
+    margin: 12px 0 0;
+}
+
+.trial-notes {
+    padding-left: 20px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+.trial-notes li + li {
+    margin-top: 6px;
+}
+
+@media (max-width: 600px) {
+    .source-metadata {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .source-metadata dd {
+        margin-bottom: 10px;
+    }
+
+    .source-item {
+        padding: 14px;
+    }
+}

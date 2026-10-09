@@ -1,0 +1,51 @@
+
+.agent-floating-button {
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 15px 22px;
+    border: none;
+    border-radius: 50px;
+
+    background: linear-gradient(135deg, #15803d, #166534);
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    box-shadow: 0 6px 20px rgba(22, 101, 52, 0.35);
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.agent-floating-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(22, 101, 52, 0.45);
+}
+
+.agent-floating-button:focus-visible {
+    outline: 3px solid #86efac;
+    outline-offset: 4px;
+}
+
+.agent-floating-icon {
+    font-size: 22px;
+    line-height: 1;
+}
+
+@media (max-width: 600px) {
+    .agent-floating-button {
+        right: 16px;
+        bottom: 18px;
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+}

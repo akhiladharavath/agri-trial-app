@@ -1,0 +1,46 @@
+.yield-chart-card {
+margin: 24px 0;
+padding: 24px;
+background: #ffffff;
+border: 1px solid #e5e7eb;
+border-radius: 14px;
+box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.yield-chart-header {
+margin-bottom: 20px;
+}
+
+.yield-chart-header h2 {
+margin: 0 0 8px;
+color: #166534;
+font-size: 22px;
+}
+
+.yield-chart-header p {
+margin: 0;
+color: #6b7280;
+line-height: 1.6;
+}
+
+.yield-chart-container {
+width: 100%;
+height: 380px;
+}
+
+@media (max-width: 600px) {
+.yield-chart-card {
+padding: 16px;
+}
+
+
+.yield-chart-header h2 {
+    font-size: 19px;
+}
+
+.yield-chart-container {
+    height: 320px;
+
+
+}
+}

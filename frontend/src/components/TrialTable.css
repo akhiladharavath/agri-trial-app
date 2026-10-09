@@ -1,0 +1,262 @@
+/* Main Table Card */
+
+.trial-table-card {
+width: 100%;
+margin: 20px 0;
+overflow: hidden;
+background: #ffffff;
+border: 1px solid #e5e7eb;
+border-radius: 12px;
+box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+/* Pagination Toolbar */
+
+.trial-table-toolbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 16px;
+padding: 18px 20px;
+background: #ffffff;
+border-bottom: 1px solid #e5e7eb;
+}
+
+.trial-table-toolbar label {
+display: flex;
+align-items: center;
+gap: 12px;
+color: #374151;
+font-size: 14px;
+font-weight: 500;
+}
+
+.trial-table-toolbar select {
+min-width: 75px;
+padding: 9px 12px;
+color: #111827;
+background: #ffffff;
+border: 1px solid #d1d5db;
+border-radius: 7px;
+font-size: 14px;
+outline: none;
+cursor: pointer;
+}
+
+.trial-table-toolbar select:focus {
+border-color: #15803d;
+box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.12);
+}
+
+.trial-record-count {
+color: #6b7280;
+font-size: 13px;
+}
+
+/* Responsive Table Wrapper */
+
+.trial-table-scroll {
+width: 100%;
+overflow-x: auto;
+}
+
+/* Table */
+
+.trial-data-table {
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.trial-data-table thead {
+background: #f0fdf4;
+}
+
+.trial-data-table th {
+padding: 16px;
+color: #166534;
+font-size: 13px;
+font-weight: 700;
+white-space: nowrap;
+border-bottom: 1px solid #dcfce7;
+}
+
+.trial-data-table td {
+padding: 15px 16px;
+color: #374151;
+font-size: 14px;
+white-space: nowrap;
+border-bottom: 1px solid #f0f0f0;
+}
+
+.trial-data-table tbody tr {
+transition: background 0.2s ease;
+}
+
+.trial-data-table tbody tr:hover {
+background: #f8fafc;
+}
+
+.trial-data-table tbody tr:last-child td {
+border-bottom: none;
+}
+
+/* Trial ID Link */
+
+.trial-id-link {
+color: #15803d;
+font-weight: 700;
+text-decoration: none;
+}
+
+.trial-id-link:hover {
+text-decoration: underline;
+}
+
+/* View Details Button */
+
+.view-trial-link {
+display: inline-block;
+padding: 8px 12px;
+color: #166534;
+background: #f0fdf4;
+border: 1px solid #bbf7d0;
+border-radius: 6px;
+font-size: 12px;
+font-weight: 600;
+text-decoration: none;
+transition: all 0.2s ease;
+}
+
+.view-trial-link:hover {
+color: #ffffff;
+background: #15803d;
+border-color: #15803d;
+}
+
+/* Yield Improvement Badges */
+
+.improvement-value {
+display: inline-block;
+padding: 6px 10px;
+border-radius: 6px;
+font-size: 13px;
+font-weight: 700;
+}
+
+.improvement-value.positive {
+color: #166534;
+background: #dcfce7;
+}
+
+.improvement-value.negative {
+color: #b91c1c;
+background: #fee2e2;
+}
+
+.improvement-value.neutral {
+color: #475569;
+background: #f1f5f9;
+}
+
+.improvement-na {
+color: #9ca3af;
+font-size: 13px;
+}
+
+/* Empty State */
+
+.trial-table-empty {
+padding: 35px 20px;
+color: #6b7280;
+text-align: center;
+font-size: 14px;
+}
+
+/* Backend Pagination Controls */
+
+.trial-pagination {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 18px;
+padding: 20px;
+background: #ffffff;
+border-top: 1px solid #e5e7eb;
+}
+
+.trial-pagination button {
+min-width: 100px;
+padding: 10px 16px;
+color: #166534;
+background: #ffffff;
+border: 1px solid #bbf7d0;
+border-radius: 7px;
+font-size: 14px;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.2s ease;
+}
+
+.trial-pagination button:hover:not(:disabled) {
+color: #ffffff;
+background: #15803d;
+border-color: #15803d;
+}
+
+.trial-pagination button:disabled {
+color: #9ca3af;
+background: #f3f4f6;
+border-color: #e5e7eb;
+cursor: not-allowed;
+}
+
+.trial-pagination span {
+color: #374151;
+font-size: 14px;
+font-weight: 600;
+}
+
+/* Tablet and Mobile */
+
+@media (max-width: 768px) {
+.trial-table-toolbar {
+align-items: flex-start;
+flex-direction: column;
+padding: 16px;
+}
+
+```
+.trial-data-table th,
+.trial-data-table td {
+    padding: 12px;
+}
+
+.trial-pagination {
+    gap: 12px;
+    padding: 16px 10px;
+}
+```
+
+}
+
+@media (max-width: 480px) {
+.trial-pagination {
+gap: 8px;
+}
+
+
+.trial-pagination button {
+    min-width: auto;
+    padding: 9px 12px;
+    font-size: 12px;
+}
+
+.trial-pagination span {
+    font-size: 12px;
+}
+
+
+}
